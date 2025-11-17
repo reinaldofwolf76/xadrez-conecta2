@@ -7,15 +7,15 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-[#2d2d3a] via-[#1a1a24] to-[#0f0f16] text-white px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#161512] text-white px-4">
       {/* Logo e Título */}
       <div className="flex flex-col items-center gap-6 mb-12">
         <div className="relative">
-          <div className="absolute inset-0 bg-purple-600/30 blur-3xl rounded-full"></div>
-          <Crown className="w-24 h-24 text-purple-400 relative z-10" strokeWidth={1.5} />
+          <div className="absolute inset-0 bg-[#759900]/20 blur-3xl rounded-full"></div>
+          <Crown className="w-24 h-24 text-[#759900] relative z-10" strokeWidth={1.5} />
         </div>
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-2">
             Xadrez Conecta
           </h1>
           <p className="text-gray-400 text-lg">Conecte-se através do xadrez</p>
@@ -25,7 +25,7 @@ export default function Home() {
       {/* Opções de Login */}
       <div className="w-full max-w-md space-y-4">
         <Button 
-          className="w-full h-14 bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold rounded-xl shadow-lg shadow-purple-900/50 transition-all duration-300 hover:scale-105"
+          className="w-full h-14 bg-[#759900] hover:bg-[#5d7700] text-white text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
         >
           <Mail className="w-5 h-5 mr-2" />
           Entrar com Email
@@ -46,7 +46,7 @@ export default function Home() {
         <Link href="/dashboard" className="block">
           <Button 
             variant="outline"
-            className="w-full h-14 bg-transparent border-2 border-purple-500/50 hover:bg-purple-500/10 text-white text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+            className="w-full h-14 bg-transparent border-2 border-[#759900]/50 hover:bg-[#759900]/10 text-white text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105"
           >
             <UserCircle className="w-5 h-5 mr-2" />
             Entrar como Convidado
@@ -57,7 +57,7 @@ export default function Home() {
       {/* Footer */}
       <div className="mt-16 text-center text-gray-500 text-sm">
         <p>Ao continuar, você concorda com nossos</p>
-        <p className="text-purple-400 hover:text-purple-300 cursor-pointer">
+        <p className="text-[#759900] hover:text-[#5d7700] cursor-pointer">
           Termos de Uso e Política de Privacidade
         </p>
       </div>
